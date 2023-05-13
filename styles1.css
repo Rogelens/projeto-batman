@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2? família=Kdam+Thmor+Pro&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    color:aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family:'Kdam Thmor Pro', sans-serif;
+}
+
+li:hover {
+    color: #d21617;
+}
+
+#sinopse {
+    width: 200%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 500px;
+}
+
+.description {
+    color: #fff;
+    font-size: 50px;
+    font-family:'Kdam Thmor Pro', sans-serif;
+    width: 100%;
+}
+
+.actor-Fotos-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.Fotos-content {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+}
+.Fotos {
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+    color: #fff;
+    font-size: 17px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.Fotos:hover {
+    transform: scale(1.02);
+}
+
+.banner-1 {
+    background-image: url('data:image/jpeg;base64,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')
+}
+
+.banner-2 {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW4iuFxFDwM6RteCjiw9eajF8Pn8IN9kb2fA&usqp=CAU')
+}
+
+.banner-3 {
+    background-image: url('https://i0.wp.com/hitsite.com.br/wp-content/uploads/2022/10/Comissario-Gordon-e-Bruce-Wayne-em-The-Batman.jpg?fit=1200%2C675&ssl=1')
+}
+
+.banner-4 {
+    background-image: url('https://oquartonerd.com.br/wp-content/uploads/2020/06/237615.jpg')
+}
+
+.banner-5 {
+    background-image: url('https://conteudo.imguol.com.br/c/entretenimento/04/2022/02/25/batman-1645790799911_v2_450x337.jpg')
+}
+
+.banner-6 {
+    background-image: url('https://sm.ign.com/ign_br/screenshot/default/charada-batman-filme_71j7.jpg')
+}
